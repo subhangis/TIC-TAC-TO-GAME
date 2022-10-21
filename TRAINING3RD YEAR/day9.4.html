@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Number1 :<input type="text" placeholder="enter number" id="num1"><br>
+    Number1 :<input type="text" placeholder="enter number" id="num2"><br>
+    Result: <input type="text"  id="res"><br>
+    <input type="button"  value="+" onclick="sum()">
+    <input type="button"  value="-" onclick="sub()">
+    <input type="button"  value="*" onclick="mul()">
+    <input type="button"  value="/" onclick="div()">
+    <script>
+        function sum(){
+            var x= document.getElementById("num1").value;
+            var y=document.getElementById("num2").value;
+            var z=Number(x)+Number(y);
+            document.getElementById("res").value=z;
+
+        }
+        function sub(){
+            var x= document.getElementById("num1").value;
+            var y=document.getElementById("num2").value;
+            var z=Number(x)-Number(y);
+            document.getElementById("res").value=z;
+        }
+            function mul(){
+            var x= document.getElementById("num1").value;
+            var y=document.getElementById("num2").value;
+            var z=Number(x)*Number(y);
+            document.getElementById("res").value=z;
+        }
+            function div(){
+            var x= document.getElementById("num1").value;
+            var y=document.getElementById("num2").value;
+            var z=Number(x)/Number(y);
+            document.getElementById("res").value=z;
+        }
+        </script>
+
+</body>
+</html>
